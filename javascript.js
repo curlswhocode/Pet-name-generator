@@ -28,7 +28,7 @@ var names = [
 ];
 function newName() {
   var randomName = Math.floor(Math.random() * names.length);
-  var randomOtherName = Math.floor(Math.random() * names.length);
+  var randomOtherName = Math.floor((Math.random() * names.length) / 2);
   document.getElementById("namePlace").innerHTML =
     names[randomName] + " " + names[randomOtherName];
   // var randomOtherName = Math.floor(Math.random() * (names.length));
